@@ -62,10 +62,7 @@ mov sp,cx
 ;----------------------------------
 push si
 push di
-mov ax,ds
-mov bx,0x800
-clc
-sub ax,bx
+mov ax,cs
 mov ds,ax
 mov es,ax
 mov si,0
