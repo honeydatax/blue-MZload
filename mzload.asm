@@ -63,7 +63,17 @@ mov sp,cx
 push si
 push di
 mov ax,ds
+mov bx,0x800
+clc
+sub ax,bx
+mov ds,ax
 mov es,ax
+mov si,0
+mov di,0
+mov bx,0
+mov dx,0
+mov cx,32000
+mov ax,0
 retf
 call printe
 	mov ah,0
