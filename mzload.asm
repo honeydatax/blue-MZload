@@ -46,7 +46,7 @@ mov cx,[bx]
 mov di,cx
 ;----------------------------------
 ;ss load
-mov ax,si
+mov ax,ds
 mov sp,0xFFFF
 mov bx,0x0e
 ds
